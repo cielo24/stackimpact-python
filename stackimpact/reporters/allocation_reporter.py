@@ -34,10 +34,6 @@ class AllocationReporter:
             self.agent.log('Memory allocation profiler is not available on Windows.')
             return
 
-        if not min_version(3, 4):
-            self.agent.log('Memory allocation profiling is available for Python 3.4 or higher')
-            return
-
         if self.started:
             return
         self.started = True

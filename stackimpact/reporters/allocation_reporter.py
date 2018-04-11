@@ -9,8 +9,7 @@ from ..profiler_scheduler import ProfilerScheduler
 from ..metric import Metric
 from ..metric import Breakdown
 
-if min_version(3, 4):
-    import tracemalloc
+import tracemalloc
 
 
 class AllocationReporter:
